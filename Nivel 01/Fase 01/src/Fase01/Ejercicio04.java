@@ -2,7 +2,7 @@
 //Has de fer el mateix que en el punt anterior, però retornant una llista que incloga els elements amb més de 5 lletres. Imprimeix el resultat. 
 
 
-package view;
+package Fase01;
 
 import java.util.Arrays;
 

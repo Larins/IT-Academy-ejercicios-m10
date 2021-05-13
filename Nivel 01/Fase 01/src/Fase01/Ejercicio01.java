@@ -1,7 +1,7 @@
 //EJERCICIO 01
 ////Tenint una llista de cadenes de noms propis, escriu un mètode que retorne una llista de totes les cadenes que comencen amb la lletra 'a' (majúscula) i tenen exactament 3 lletres. Imprimeix el resultat. 
 
-package view;
+package Fase01;
 
 import java.util.*;
 
@@ -29,5 +29,6 @@ public class Ejercicio01 {
 	    //Printamos.
 	    System.out.println("Nombres que empiezan con A mayúscula: ");
 	    System.out.println(Arrays.toString(nombresConA));
+	    
 	}
 }

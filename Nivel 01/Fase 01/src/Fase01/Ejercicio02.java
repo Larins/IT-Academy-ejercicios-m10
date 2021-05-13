@@ -1,7 +1,7 @@
 //EJERCICIO 02
 //Escriu un mètode que retorne una cadena separada per comes basada en una llista d’Integers. Cada element hauria d'anar precedit per la lletra "e" si el nombre és parell, i precedit de la lletra "o" si el nombre és imparell. Per exemple, si la llista d'entrada és (3,44), la sortida hauria de ser "o3, e44". Imprimeix el resultat. 
 
-package view;
+package Fase01;
 
 import java.util.Arrays;
 

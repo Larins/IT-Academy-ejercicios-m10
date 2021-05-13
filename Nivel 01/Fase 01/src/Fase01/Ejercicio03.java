@@ -1,7 +1,7 @@
 //EJERCICIO 03
 //Tenint una llista de Strings, escriu un mètode que retorne una llista de totes les cadenes que continguen la lletra ‘o’ i imprimeix el resultat. 
 
-package view;
+package Fase01;
 
 import java.util.Arrays;
 

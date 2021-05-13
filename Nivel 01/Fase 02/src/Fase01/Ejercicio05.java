@@ -14,15 +14,10 @@ public class Ejercicio05 {
 	    
 			//Creamos el arraylist de cadenas con los meses y printamos.
 			System.out.println("OPCIÓN 1: LOS MESES SON UN ARRAYLIST");
-	
 			List<String> months = Arrays.asList("ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC");
-			
-			//Printamos sin usar lambda:
-	  	    System.out.println("Impresión System Out Print (sin lambda): ");
+			System.out.println("/nLos meses, printados SIN lambda: ");
 		    System.out.println(months);
-		    
-		    //Creamos la lambda e imprimimos.
-	  	    System.out.println("Impresión Lambda: ");
+	  	    System.out.println("/nLos meses, printados CON lambda: ");
 		    months.forEach(l -> System.out.println(l));
 		    
 	    
@@ -31,14 +26,15 @@ public class Ejercicio05 {
 	  		//Creamos el array de cadenas con los meses y printamos.
 	  		System.out.println("\nOPCIÓN 2: LOS MESES SON UN ARRAY");
 	  		String[] meses = {"ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"};
-	  		
-			//Printamos sin usar lambda:
-	  	    System.out.println("Impresión System Out Print (sin lambda): ");
-	  	    System.out.println(Arrays.toString(meses));
-	  		
-	  	    //Creamos la lambda e imprimimos con un thread.
-	  	    System.out.println("Impresión Lambda + thread: ");
-	  	    new Thread(() -> System.out.println(Arrays.toString(meses))).start();
+		    System.out.println("\nLos meses, printados SIN lambda: ");
+		    System.out.println(Arrays.toString(meses));
+		    System.out.println("\nLos meses, printados CON lambda: ");
+		    Arrays.stream(meses).forEach(num -> System.out.println(num));
+		    
+		    //Acabo de descubrir otra manera de printar con lambda usando threads.
+	  	    //System.out.println("\nLos meses, printados CON lambda y CON thread: ");
+	  	    //new Thread(() -> System.out.println(Arrays.toString(meses))).start();
+	  	    
 
 	    
 	}

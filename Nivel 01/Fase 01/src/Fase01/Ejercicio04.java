@@ -11,10 +11,11 @@ public class Ejercicio04 {
 	public static void main(String[] args) {
 		
 		//Creamos el array de cadenas y printamos.
-		//Cambiamos un poco el array para que haya varios con 5 caracteres (con y sin la letra O).
 		String[] cadenas = {"Iron Maiden", "Judas", "Black Sabbath", "Pink Floyd", "Ghost", "Tool", "Ozzy Osbourne"};
-	    System.out.println("Todas las cadenas: ");
+	    System.out.println("\nTodas las cadenas, printadas SIN lambda: ");
 	    System.out.println(Arrays.toString(cadenas));
+	    System.out.println("\nTodas las cadenas, printadas CON lambda: ");
+	    Arrays.stream(cadenas).forEach(num -> System.out.println(num));
 	    
 	    //Creamos el loop y las variables necesarias para printar solo las que cumplen las condiciones.
 	    //Condiciones: que empiecen por A y tengan solo 3 letras.
@@ -29,8 +30,11 @@ public class Ejercicio04 {
 		        }
 		    }	
 		    //Printamos.
-		    System.out.println("Nombres que empiezan con A mayúscula: ");
+		    System.out.println("\nSOLO nombres que cumplan condiciones, printadas SIN lambda: ");
 		    System.out.println(Arrays.toString(cadenas5ConOo));
+		    System.out.println("\nSOLO nombres que cumplan condiciones, printadas CON lambda: ");
+		    Arrays.stream(cadenas5ConOo).forEach(num -> System.out.println(num));
+		    System.out.println("En este caso hay menos nombres en que en el ejercicio anterior porque las condiciones son más restrictivas.");
 		
 	}
 

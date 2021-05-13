@@ -10,9 +10,11 @@ public class Ejercicio03 {
 	public static void main(String[] args) {
 		
 		//Creamos el array de cadenas y printamos.
-		String[] cadenas = {"Iron Maiden", "Judas Priest", "Black Sabbath", "Pink Floyd", "Tool", "Ozzy Osbourne"};
-	    System.out.println("Todas las cadenas: ");
+		String[] cadenas = {"Iron Maiden", "Judas", "Black Sabbath", "Pink Floyd", "Ghost", "Tool", "Ozzy Osbourne"};
+	    System.out.println("\nTodas las cadenas, printadas SIN lambda: ");
 	    System.out.println(Arrays.toString(cadenas));
+	    System.out.println("\nTodas las cadenas, printadas CON lambda: ");
+	    Arrays.stream(cadenas).forEach(num -> System.out.println(num));
 	    
 	    //Creamos el loop y las variables necesarias para printar solo las que cumplen las condiciones.
 	    //Condiciones: que contengan la letra "o".
@@ -26,7 +28,10 @@ public class Ejercicio03 {
 		        }
 		    }	
 		    //Printamos.
-		    System.out.println("Nombres que contengan la letra O: ");
+		    System.out.println("\nSOLO nombres que cumplan condiciones, printadas SIN lambda: ");
 		    System.out.println(Arrays.toString(cadenasConOo));
+		    System.out.println("\nSOLO nombres que cumplan condiciones, printadas CON lambda: ");
+		    Arrays.stream(cadenasConOo).forEach(num -> System.out.println(num));
+
 	}
 }
